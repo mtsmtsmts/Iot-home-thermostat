@@ -1,6 +1,24 @@
 # Iot-home-thermostat
 Using a NodeMCU with ESP8266, HTTP requests, IFTTT, and Google Assistant to control a digital Honeywell thermostat. MCU uses two GPIO pins to control the temperature up and down buttons on the thermostat PCB. 
 
+## Features
+-Restores state on reset or power out
+
+-Uses a web based server to store a variable that represents current set point
+
+-Writes to flash memory two strings that represent the current state: heat on/off and a POR WebIDE flag
+
+-Can easily use flash memory to store the current set point, I discovered flash memory was accessible during run time after I wrote in the web variable. Can easily change to set all vars in flash memory.
+
+-If no access to web server after reset set point will init in off state and blink an error to let the user know the set point is not in synch with the thermostat. Can easily change to poll server.
+
+-Turns off the heat after 1 hour, blinks led very lightly to indicate operation
+
+-Blinks led for commands and errors
+
+-Buffers consecutive commands sent and executes first and last commands retreived
+
+
 ### GPIO
 
 The GPIO pins are connected to base driven, open collector, NPN BJT transistors. The BJT collectors are each soldered, one to the Up and one to the Down button pads on the Honeywell PCB. The emitter pins are soldered to a common point on the PCB button matrix. A base resistor value is selected to limit base current at <2mA.
@@ -19,9 +37,9 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 
 ### Software
 
-ESPlorer using LUA
+ESPlorer using Lua https://esp8266.ru/esplorer/ 
 
-Firmwas provided from the cloud build 
+Firmware provided from the cloud build 
 https://nodemcu-build.com/
 
 ### Hardware
@@ -30,5 +48,7 @@ NodeMCU esp8266 from china
 
 2x 2N2222 
 
-LM317 with R2=164R and R1=100R to provide ~3.3V
+LM317 with R2=160R and R1=100R to provide ~3.3V
+
+9V wall wart power adapter
 
