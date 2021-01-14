@@ -17,7 +17,7 @@ Using a NodeMCU with ESP8266, HTTP requests, IFTTT, and Google Assistant to cont
 
 ### GPIO
 
-The GPIO pins are connected to base driven, open collector, NPN BJT transistors. The BJT collectors are each soldered, one to the Up and one to the Down button pads on the Honeywell PCB. The emitter pins are soldered to a common point on the PCB button matrix. A base resistor value is selected to limit base current at <2mA.
+The GPIO pins are connected to base driven, open collector, NPN BJT transistors. The BJT collectors are each soldered, one to the Up and one to the Down button pads on the Honeywell PCB. The emitter pins are soldered to a common point on the PCB button matrix. A base resistor value is selected to limit base current at <10mA.
 
 ### Timing
 
