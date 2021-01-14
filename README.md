@@ -38,6 +38,8 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 NodeMCU docs https://nodemcu.readthedocs.io/en/release/
 
 A simple webIDE https://github.com/joysfera/nodemcu-web-ide 
+
+IFTTT to ESP8266 https://github.com/limbo666/IFTTT_to_ESP8266
 ### Software
 
 ESPlorer using Lua https://esp8266.ru/esplorer/ 
