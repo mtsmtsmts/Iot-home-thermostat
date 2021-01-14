@@ -39,8 +39,11 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 
 ESPlorer using Lua https://esp8266.ru/esplorer/ 
 
-Firmware provided from the cloud build 
+Firmware provided from the cloud build
 https://nodemcu-build.com/
+
+ESPEasy to flash firmware 
+https://github.com/letscontrolit/ESPEasy
 
 ### Hardware
 
