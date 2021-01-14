@@ -1,7 +1,7 @@
 # Iot-home-thermostat
 Using a NodeMCU with ESP8266, HTTP requests, IFTTT, and Google Assistant to control a digital Honeywell thermostat. MCU uses two GPIO pins to control the temperature up and down buttons on the thermostat PCB. 
 
-## Features
+### Features
 -Restores state on reset or power out
 
 -Uses a web based server to store a variable that represents current set point
@@ -34,6 +34,35 @@ The final project uses a 9V wallwart with a LM317 regulator set at 3.290V with r
 ### HTTP Handling
 
 Temperature is controlled one of three ways: manually, using Google Assistant and IFTTT webhooks, or an HTTP GET request. A webIDE provides the ability to modify any of the functions OTA. Much code is credited to different authors. The webIDE operates in parallel with the application code because of memory limitations. An http request with a key word stores the current state of the temperatue, resets the esp8266 and loads the webIDE. The IDE will automatically exit and return the esp8266 to application code, restoring the current state. The current state is also preserved across power outages. 
+
+### How To Use
+1. Flash firmware to ESP8266 using ESPEasy
+2. Modify and flash program code using ESPlorer
+3. Configure IFTTT webhooks using the reference in the resources below
+4. Use Google Assistant or access using a web browser 
+
+
+#### To access the application using web browser:
+    
+http://`IP_Address`:`Port`/`cmdString:` `Command`
+
+`IP_Address` = Use your LAN ip set by your router typical: 192.168.0.xx. Outside LAN use your IP address set by your ISP.
+
+`Port` = The server port (code is set to 8099)
+
+`cmdString` = Your keyword (default is "webhooks")
+
+`Command` = Your command. e.g. on the default configuration you can use "on", "off",etc...
+ 
+ #### To access the WebIDE using web browser:
+ http://`IP_Address`:`Port`/`Command`
+ 
+ `Command` = string set in code to enable webide (restart in this case). 
+ 
+ LAN Example:
+        
+        192.168.0.13:8098/webhooks:Temp=on  or  192.168.0.13:8099/restart
+
 # Resources
 NodeMCU docs https://nodemcu.readthedocs.io/en/release/
 
