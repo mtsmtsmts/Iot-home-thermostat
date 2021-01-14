@@ -1,7 +1,7 @@
 # Iot-home-thermostat
 Using a NodeMCU with ESP8266, HTTP requests, IFTTT, and Google Assistant to control a digital Honeywell thermostat. MCU uses two GPIO pins to control the temperature up and down buttons on the thermostat PCB. 
 
-![gif](https://github.com/mtsmtsmts/Iot-thermostat/blob/main/ProjectFiles/Hnet-image.gif?raw=true)
+![gif](https://github.com/mtsmtsmts/Iot-home-thermostat/blob/main/ProjectFiles/Hnet-image.gif?raw=true)
 
 
 ### Features
@@ -31,7 +31,7 @@ The final project uses a 9V wallwart with a LM317 regulator set at 3.290V with r
 
 Temperature is controlled one of three ways: manually, using Google Assistant and IFTTT webhooks, or an HTTP GET request. A webIDE provides the ability to modify any of the functions OTA. Much code is credited to different authors. The webIDE operates in parallel with the application code because of memory limitations. An http request with a key word stores the current state of the temperatue, resets the esp8266 and loads the webIDE. The IDE will automatically exit and return the esp8266 to application code, restoring the current state. The current state is also preserved across power outages. 
 
-![NodeSch](https://github.com/mtsmtsmts/Iot-thermostat/blob/main/ProjectFiles/Sch_nodemcu%20thermo.jpg?raw=true)
+![NodeSch](https://github.com/mtsmtsmts/Iot-home-thermostat/blob/main/ProjectFiles/Sch_nodemcu%20thermo.jpg?raw=true)
 
 ### How To Use
 1. Flash firmware to ESP8266 using ESPEasy
