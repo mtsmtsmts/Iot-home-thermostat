@@ -45,6 +45,12 @@ https://nodemcu-build.com/
 ESPEasy to flash firmware 
 https://github.com/letscontrolit/ESPEasy
 
+IFTTT app on Android https://ifttt.com/home
+
+Free webhost server to store a single char using PHP
+https://www.000webhost.com/
+
+
 ### Hardware
 
 NodeMCU esp8266 from china
