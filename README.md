@@ -32,12 +32,13 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 1. Flash firmware to ESP8266 using ESPEasy
 2. Modify and flash program code using ESPlorer
 3. Configure IFTTT webhooks using the reference in the resources below
-4. Use Google Assistant or access using a web browser 
+4. Create web variable using free webhost listed and upload the PHP file 
+5. Use Google Assistant or access using a web browser 
 
 
 #### To access the application using web browser:
     
-http://`IP_Address`:`Port`/`cmdString:` `Command`
+##### http://`IP_Address`:`Port`/`cmdString:` `Command`
 
 `IP_Address` = Use your LAN ip set by your router typical: 192.168.0.xx. Outside LAN use your IP address set by your ISP.
 
@@ -47,14 +48,28 @@ http://`IP_Address`:`Port`/`cmdString:` `Command`
 
 `Command` = Your command. e.g. on the default configuration you can use "on", "off",etc...
  
- #### To access the WebIDE using web browser:
- http://`IP_Address`:`Port`/`Command`
+#### To access the WebIDE using web browser:
+##### http://`IP_Address`:`Port`/`Command`
  
  `Command` = string set in code to enable webide (restart in this case). 
  
  LAN Example:
         
         192.168.0.13:8098/webhooks:Temp=on  or  192.168.0.13:8099/restart
+        
+#### To access the web stored variable
+
+##### http://`Your web host address`/`esppost.php` `?Variable=`
+
+##### http://`Your web host address`/`data.html`
+
+`Your web host` = any web host you decide, I used 000webhost.com
+
+`esppost.php` = code sends GET request to this file 
+
+`?Variable=` = text to store data to data.html using php code (`Variable` is Temp in program)
+
+`data.html` = data stored in cloud
 
 # Resources
 NodeMCU docs https://nodemcu.readthedocs.io/en/release/
