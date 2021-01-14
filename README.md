@@ -42,12 +42,13 @@ A simple webIDE https://github.com/joysfera/nodemcu-web-ide
 IFTTT to ESP8266 https://github.com/limbo666/IFTTT_to_ESP8266
 ### Software
 
-ESPlorer using Lua https://esp8266.ru/esplorer/ 
+ESPlorer for uploading code using Lua 
+https://esp8266.ru/esplorer/ 
 
 Firmware provided from the cloud build
 https://nodemcu-build.com/
 
-ESPEasy to flash firmware 
+ESPEasy to flash firmware(provided in dir) 
 https://github.com/letscontrolit/ESPEasy
 
 IFTTT app on Android https://ifttt.com/home
