@@ -1,6 +1,9 @@
 # Iot-home-thermostat
 Using a NodeMCU with ESP8266, HTTP requests, IFTTT, and Google Assistant to control a digital Honeywell thermostat. MCU uses two GPIO pins to control the temperature up and down buttons on the thermostat PCB. 
 
+![gif](https://github.com/mtsmtsmts/Iot-thermostat/blob/main/ProjectFiles/Hnet-image.gif?raw=true)
+
+
 ### Features
 1. Restores state on reset or power out
 2. Uses a web based server to store a variable that represents current set point
