@@ -2,21 +2,14 @@
 Using a NodeMCU with ESP8266, HTTP requests, IFTTT, and Google Assistant to control a digital Honeywell thermostat. MCU uses two GPIO pins to control the temperature up and down buttons on the thermostat PCB. 
 
 ### Features
--Restores state on reset or power out
-
--Uses a web based server to store a variable that represents current set point
-
--Writes to flash memory two strings that represent the current state: heat on/off and a POR WebIDE flag
-
--Can easily use flash memory to store the current set point, I discovered flash memory was accessible during run time after I wrote in the web variable. Can easily change to set all vars in flash memory.
-
--If no access to web server after reset set point will init in off state and blink an error to let the user know the set point is not in synch with the thermostat. Can easily change to poll server.
-
--Turns off the heat after 1 hour, blinks led very lightly to indicate operation
-
--Blinks led for commands and errors
-
--Buffers consecutive commands sent and executes first and last commands retreived
+1. Restores state on reset or power out
+2. Uses a web based server to store a variable that represents current set point
+3. Writes to flash memory two strings that represent the current state: heat on/off and a POR WebIDE flag
+4. Can easily use flash memory to store the current set point, I discovered flash memory was accessible during run time after I wrote in the web variable. Can easily change to set all vars in flash memory.
+5. If no access to web server after reset set point will init in off state and blink an error to let the user know the set point is not in synch with the thermostat. Can easily change to poll server.
+6. Turns off the heat after 1 hour, blinks led very lightly to indicate operation
+7. Blinks led for commands and errors
+8. Buffers consecutive commands sent and executes first and last commands retreived
 
 
 ### GPIO
