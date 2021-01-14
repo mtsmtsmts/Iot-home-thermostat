@@ -40,18 +40,18 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
     
 ##### http://`IP_Address`:`Port`/`cmdString:` `Command`
 
-`IP_Address` = Use your LAN ip set by your router typical: 192.168.0.xx. Outside LAN use your IP address set by your ISP.
+- `IP_Address` = Use your LAN ip set by your router typical: 192.168.0.xx. Outside LAN use your IP address set by your ISP.
 
-`Port` = The server port (code is set to 8099)
+- `Port` = The server port (code is set to 8099)
 
-`cmdString` = Your keyword (default is "webhooks")
+- `cmdString` = Your keyword (default is "webhooks")
 
-`Command` = Your command. e.g. on the default configuration you can use "on", "off",etc...
+- `Command` = Your command. e.g. on the default configuration you can use "on", "off",etc...
  
 #### To access the WebIDE using web browser:
 ##### http://`IP_Address`:`Port`/`Command`
  
- `Command` = string set in code to enable webide (restart in this case). 
+ - `Command` = string set in code to enable webide (restart in this case). 
  
  LAN Example:
         
@@ -63,13 +63,13 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 
 ##### http://`Your web host address`/`data.html`
 
-`Your web host` = any web host you decide, I used 000webhost.com
+- `Your web host` = any web host you decide, I used 000webhost.com
 
-`esppost.php` = code sends GET request to this file 
+- `esppost.php` = code sends GET request to this file 
 
-`?Variable=` = text to store data to data.html using php code (`Variable` is Temp in program)
+- `?Variable=` = text to store data to data.html using php code (`Variable` is Temp in program)
 
-`data.html` = data stored in cloud
+- `data.html` = data stored in cloud
 
 # Resources
 NodeMCU docs https://nodemcu.readthedocs.io/en/release/
