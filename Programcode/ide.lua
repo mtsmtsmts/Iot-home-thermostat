@@ -1,3 +1,7 @@
+
+-- IFTTT server for ESP8266 -- Receive commands from webhooks and integrate you project to any IFTTT service or device. 
+-- Jan 2019 Created by Nikos Georgousis
+
 function editor(conn) -- feel free to disable the shiny Ajax.org Cloud Editor
     local aceEnabled
     local AceEnabled = aceEnabled == nil and true or aceEnabled
