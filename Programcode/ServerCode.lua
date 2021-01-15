@@ -1,4 +1,4 @@
---[[Check https://github.com/mtsmtsmts/Iot-thermosta]]--
+--[[Check https://github.com/mtsmtsmts/Iot-home-thermosta]]--
 
 thermo_Server = net.createServer(net.TCP) --Create TCP server
 
