@@ -1,4 +1,8 @@
---[[Check https://github.com/mtsmtsmts/Iot-thermosta]]--
+--[[
+Check https://github.com/mtsmtsmts/Iot-home-thermosta
+Apparently ESPlorer has a bug that won't let me load a file >10KB
+so I have split this file in two parts
+]]--
 
 local Error_Flag=0     --global error flag for led blink file
 local heat_On = nil	--flag for current operation state, stored in flash too
