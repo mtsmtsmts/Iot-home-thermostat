@@ -58,7 +58,7 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 
 #### To access the application using web browser:
     
-##### http://`IP_Address`:`Port`/`cmdString:` `Command`
+   ##### http://`IP_Address`:`Port`/`cmdString:` `Command`
 
 - `IP_Address` = Use your LAN ip set by your router typical: 192.168.0.xx. Outside LAN use your IP address set by your ISP.
 
@@ -69,19 +69,19 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 - `Command` = Your command. e.g. on the default configuration you can use "on", "off",etc...
  
 #### To access the WebIDE using web browser:
-##### http://`IP_Address`:`Port`/`Command`
+   ##### http://`IP_Address`:`Port`/`Command`
  
  - `Command` = string set in code to enable webide (restart in this case). 
  
  LAN Example:
         
-        192.168.0.13:8098/webhooks:Temp=on  or  192.168.0.13:8099/restart
+        192.168.0.13:8098/webhooks:heaton  or  192.168.0.13:8099/restart
         
 #### To access the web stored variable
 
-##### http://`Your web host address`/`esppost.php` `?Variable=`
+   ##### http://`Your web host address`/`esppost.php` `?Variable=`
 
-##### http://`Your web host address`/`data.html`
+   ##### http://`Your web host address`/`data.html`
 
 - `Your web host` = any web host you decide, I used 000webhost.com
 
@@ -90,6 +90,10 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 - `?Variable=` = text to store data to data.html using php code (`Variable` is Temp in program)
 
 - `data.html` = data stored in cloud
+
+Example:
+
+        http://exampleserver.com/yourdirectory/esppost.php?Temp='on'
 
 # Resources
 NodeMCU docs https://nodemcu.readthedocs.io/en/release/
