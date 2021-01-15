@@ -25,11 +25,11 @@ There is no feedback loop from the thermostat so the MCU uses timers to closely 
 
 ### Power Supply
 
-The final project uses a 9V wallwart with a LM317 regulator set at 3.290V with resistors on hand. Initially the plan was to use the power on board the PCB and from looking at the Honeywell PCB two locations were noted. A 4-pin header that transfers pwr,gnd,signal from the power board to the control board was measured at 6.75Vdc and a 3.3Vdc (500ma?) regulator was found on the control board providing power to a mcu. Neither option turned out to be useful as when loaded in parallel with even a few mA would cause the voltage to dip and the thermostat's mcu to reset.
+The final project uses a 9V wallwart with a LM317 regulator set at 3.290V with resistors on hand. Initially the plan was to use the power on board the PCB and from looking at the Honeywell PCB two locations were noted. A 4-pin header that transfers pwr,gnd,signal from the power board to the control board was measured at 6.75Vdc and a 3.3Vdc (500ma?) regulator was found on the control board providing power to a mcu. Neither option turned out to be useful as when loaded in parallel with even a few mA would cause the voltage to dip and the thermostat's mcu to reset. It may be possible to tap off the power board transformer secondary, rectify, and regulate to 3.3v.  
 
 ### HTTP Handling
 
-Temperature is controlled one of three ways: manually, using Google Assistant and IFTTT webhooks, or an HTTP GET request. A webIDE provides the ability to modify any of the functions OTA. Much code is credited to different authors. The webIDE operates in parallel with the application code because of memory limitations. An http request with a key word stores the current state of the temperatue, resets the esp8266 and loads the webIDE. The IDE will automatically exit and return the esp8266 to application code, restoring the current state. The current state is also preserved across power outages. 
+Temperature is controlled one of three ways: manually, using Google Assistant and IFTTT webhooks, or an HTTP GET request. A webIDE provides the ability to modify any of the functions OTA. Much code is credited to different authors and the NodeMCU documentation. The webIDE operates in parallel with the application code because of memory limitations. An http request with a key word stores the current state of the temperatue, resets the esp8266 and loads the webIDE. The IDE will automatically exit and return the esp8266 to application code, restoring the current state. The current state (on/off and temperature set) is also preserved across power outages. 
 
 ![NodeSch](https://github.com/mtsmtsmts/Iot-home-thermostat/blob/main/ProjectFiles/Sch_nodemcu%20thermo.jpg?raw=true)
 
