@@ -1,4 +1,4 @@
---[[Check https://github.com/mtsmtsmts/Iot-thermosta]]--
+--[[Check https://github.com/mtsmtsmts/Iot-home-thermosta]]--
 
 gpio.write(5, gpio.LOW)
 gpio.write(6, gpio.LOW)
