@@ -1,4 +1,6 @@
---[[Check https://github.com/mtsmtsmts/Iot-thermosta]]--
+--[[Check https://github.com/mtsmtsmts/Iot-home-thermostat
+Apparently ESPlorer has a bug that won't let me load a file >10KB
+so I have split this file in two parts]]--
 
 local buffer_Data --preserves data across function, needs global
 cur_Temp=13 --set timer to call function every initialization or every xx hours?
