@@ -93,7 +93,9 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 
 Example:
 
-        http://exampleserver.com/yourdirectory/esppost.php?Temp='on'
+        GET request to: http://exampleserver.com/yourdirectory/esppost.php?Temp='on'
+        
+        Data stored:    http://exampleserver.com/yourdirectory/data.html
 
 # Resources
 NodeMCU docs https://nodemcu.readthedocs.io/en/release/
