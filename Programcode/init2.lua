@@ -1,4 +1,4 @@
---[[Check https://github.com/mtsmtsmts/Iot-thermosta]]--
+--[[Check https://github.com/mtsmtsmts/Iot-home-thermosta]]--
 
 function checkRestart()
     local Restart = FileRead("data.txt","Restart:") --retrieve POR flag
