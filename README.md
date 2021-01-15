@@ -15,6 +15,7 @@ Warning: modifying your thermostat could expose you to hazardeous voltages, do s
 6. Turns off the heat after 1 hour, blinks led very lightly to indicate operation
 7. Blinks led for commands and errors
 8. Buffers consecutive commands sent and executes first and last commands retreived
+9. It is possible to mdify the code so the temperature adjusts to a specific degree. Currently the commands are on(21C)/off(13C)/up(+2C)/down(-2C)/reset(synch 13C)
 
 
 ### GPIO
