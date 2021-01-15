@@ -37,6 +37,16 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 
 ![NodeSch](https://github.com/mtsmtsmts/Iot-home-thermostat/blob/main/ProjectFiles/Sch_nodemcu%20thermo.jpg?raw=true)
 
+<p align="center">
+    
+
+   
+    
+<img src="https://github.com/mtsmtsmts/Iot-home-thermostat/blob/main/ProjectFiles/Wemos-D1-Mini.png?raw=true">
+</p>
+
+
+
 ### How To Use
 1. Flash firmware to ESP8266 using ESPEasy
 2. Modify and flash program code using ESPlorer
