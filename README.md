@@ -67,15 +67,19 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 - `cmdString` = Your keyword (default is "webhooks")
 
 - `Command` = Your command. e.g. on the default configuration you can use "on", "off",etc...
+
+ LAN Example:
+        
+        192.168.0.13:8098/webhooks:heaton
  
 #### To access the WebIDE using web browser:
    ##### http://`IP_Address`:`Port`/`Command`
  
  - `Command` = string set in code to enable webide (restart in this case). 
  
- LAN Example:
-        
-        192.168.0.13:8098/webhooks:heaton  or  192.168.0.13:8099/restart
+LAN Example:
+
+        192.168.0.13:8099/restart
         
 #### To access the web stored variable
 
