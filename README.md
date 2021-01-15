@@ -83,6 +83,8 @@ Temperature is controlled one of three ways: manually, using Google Assistant an
 # Resources
 NodeMCU docs https://nodemcu.readthedocs.io/en/release/
 
+D1 mini docs https://www.wemos.cc/en/latest/d1/d1_mini.html
+
 A simple webIDE https://github.com/joysfera/nodemcu-web-ide 
 
 IFTTT to ESP8266 https://github.com/limbo666/IFTTT_to_ESP8266
@@ -105,11 +107,24 @@ https://www.000webhost.com/
 
 ### Hardware
 
-NodeMCU esp8266 from china
+D1mini esp8266 from Aliexpress
 
 2x 2N2222 
 
 LM317 with R2=160R and R1=100R to provide ~3.3V
 
 9V wall wart power adapter
+
+### Datasheets
+LM317 https://www.ti.com/lit/gpn/LM317
+
+ESP8266 https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf
+
+2N2222 https://www.electroschematics.com/wp-content/uploads/2009/04/2n2222-datasheet.pdf
+
+D1mini https://www.wemos.cc/en/latest/_static/files/sch_d1_mini_v3.0.0.pdf
+
+D1mini pin map https://i2.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/05/ESP8266-WeMos-D1-Mini-pinout-gpio-pin.png?quality=100&strip=all&ssl=1
+
+NodeMCU https://components101.com/development-boards/nodemcu-esp8266-pinout-features-and-datasheet
 
