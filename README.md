@@ -31,7 +31,7 @@ The final project uses a 9V wallwart with a LM317 regulator set at 3.290V with r
 
 ### HTTP Handling
 
-Temperature is controlled one of three ways: manually, using Google Assistant and IFTTT webhooks, or an HTTP GET request. A webIDE provides the ability to modify any of the functions OTA. Much code is credited to different authors and the NodeMCU documentation. The webIDE operates in parallel with the application code because of memory limitations. An http request with a key word stores the current state of the temperatue, resets the esp8266 and loads the webIDE. The IDE will automatically exit and return the esp8266 to application code, restoring the current state. The current state (on/off and temperature set) is also preserved across power outages. 
+Temperature is controlled one of three ways: manually, using Google Assistant and IFTTT webhooks, or an HTTP GET request. A webIDE provides the ability to modify any of the functions OTA. Much code is credited to different authors and the NodeMCU documentation. The webIDE operates in parallel with the application code because of memory limitations. To load the webIDE a browser sends an http request with a key word, stores the current state of the temperatue, resets the esp8266, and starts the webIDE. The user is able to upload new files, edit files stored in flash, compile files, delete files, and restart the NodeMCU. The IDE will automatically exit after 10 minutes and return the esp8266 to application code, restoring the current state. The current state (on/off and temperature set) is also preserved across power outages. 
 
 ### Schematic
 
